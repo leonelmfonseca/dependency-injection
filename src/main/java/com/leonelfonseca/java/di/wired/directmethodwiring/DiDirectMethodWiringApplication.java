@@ -1,7 +1,7 @@
 package com.leonelfonseca.java.di.wired.directmethodwiring;
 
-import com.leonelfonseca.java.di.unwiredoption.model.Cat;
-import com.leonelfonseca.java.di.unwiredoption.model.Person;
+import com.leonelfonseca.java.di.wired.directmethodwiring.model.Cat;
+import com.leonelfonseca.java.di.wired.directmethodwiring.model.Person;
 import com.leonelfonseca.java.di.wired.directmethodwiring.config.DirectMethodWiringConfig;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -13,10 +13,10 @@ public class DiDirectMethodWiringApplication {
 
     System.out.println("Wire beans by direct method call");
     System.out.println();
-    wiredBeansDemo();
+    DirectMethodWiringDemo();
   }
 
-  private static void wiredBeansDemo() {
+  private static void DirectMethodWiringDemo() {
 
     /** Context instantiate beans through configuration class */
     var context = new AnnotationConfigApplicationContext(DirectMethodWiringConfig.class);
