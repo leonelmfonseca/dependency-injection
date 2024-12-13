@@ -22,7 +22,7 @@ public class FieldInjectionCat {
 
   public FieldInjectionCat() {
     /**
-     * Having a default constructor in CtorInjectionCat ensures that Spring can instantiate the bean
+     * Having a default constructor in FieldInjectionCat ensures that Spring can instantiate the bean
      * correctly
      */
     System.out.println("Miau!");

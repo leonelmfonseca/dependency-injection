@@ -18,7 +18,7 @@ public class UnwiredDiApplication {
 
   private static void unwiredBeansDemo() {
 
-    /** Context instantiate beans through configuration class */
+    /** Context instantiate beans based on configuration class */
     var context = new AnnotationConfigApplicationContext(UnwiredBeansConfig.class);
 
     /** Beans are available to be used */

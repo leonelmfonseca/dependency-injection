@@ -11,22 +11,18 @@ public class DiCtorInjectionApplication {
   public static void main(String[] args) {
 
     System.out.println("Constructor Injection");
-    ctorInjectionDemo();
     System.out.println();
+    ctorInjectionDemo();
   }
 
   private static void ctorInjectionDemo() {
 
-    /** Context instantiate beans through configuration class */
+    /** Context instantiate beans based on configuration class */
     var context = new AnnotationConfigApplicationContext(CtorInjectionConfig.class);
 
-    /** Beans are available to be used */
+    /** Bean are available to be used */
     CtorInjectionPerson johnny = context.getBean(CtorInjectionPerson.class);
 
-    /**
-     * Johnny and Mittens are in the context, however, observe that johnnies "mittens" is null,
-     * which mean that there’s not yet a relationship between the instances
-     */
     System.out.println(johnny);
   }
 }

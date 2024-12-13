@@ -12,6 +12,7 @@ public class DiDirectMethodWiringApplication {
   public static void main(String[] args) {
 
     System.out.println("Wire beans by direct method call");
+    System.out.println();
     wiredBeansDemo();
   }
 

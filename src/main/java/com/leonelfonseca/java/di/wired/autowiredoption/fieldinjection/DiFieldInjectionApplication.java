@@ -11,14 +11,16 @@ public class DiFieldInjectionApplication {
   public static void main(String[] args) {
 
     System.out.println("Field Injection");
+    System.out.println();
     fieldInjectionDemo();
   }
 
   private static void fieldInjectionDemo() {
 
-    /** Context instantiate beans through configuration class */
+    /** Context instantiate beans based on configuration class */
     var context = new AnnotationConfigApplicationContext(FieldInjectionConfig.class);
 
+    /** Bean are available to be used */
     FieldInjectionPerson johnny = context.getBean(FieldInjectionPerson.class);
 
     System.out.println(johnny);
