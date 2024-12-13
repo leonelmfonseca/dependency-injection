@@ -28,8 +28,8 @@ public class DirectMethodWiringConfig {
     p.setAge(22);
 
     /**
-     * We define the relationship between the person bean and the cat bean by directly calling
-     * the method(direct wiring) that returns the bean we want to set.
+     * We define the relationship between the person bean and the cat bean by directly calling the
+     * method(direct wiring) that returns the bean we want to set.
      */
     p.setMittens(cat());
     /**
@@ -37,13 +37,11 @@ public class DirectMethodWiringConfig {
      * into its context and another one when the person() method makes the direct call to the cat()
      * method?"
      *
-     * No, we actually have only one cat instance in this application overall. Spring is smart
+     * <p>No, we actually have only one cat instance in this application overall. Spring is smart
      * enough to understand that by calling the cat() method, you want to refer to the cat bean in
      * its context. When we use the @Bean annotation to define beans into the Spring context, Spring
      * controls how the methods are called and can apply logic above the method call
      */
-
-
     return p;
   }
 }

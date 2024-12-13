@@ -1,9 +1,5 @@
 package com.leonelfonseca.java.di.wired.directmethodwiring;
 
-import com.leonelfonseca.java.di.component.AutowiredFieldInjectionPerson;
-import com.leonelfonseca.java.di.unwiredoption.config.AutoWiredBeansFieldInjectionConfig;
-import com.leonelfonseca.java.di.unwiredoption.config.WireBeansThroughParameterConfig;
-import com.leonelfonseca.java.di.unwiredoption.config.WiredBeansConfig;
 import com.leonelfonseca.java.di.unwiredoption.model.Cat;
 import com.leonelfonseca.java.di.unwiredoption.model.Person;
 import com.leonelfonseca.java.di.wired.directmethodwiring.config.DirectMethodWiringConfig;
@@ -36,8 +32,5 @@ public class DiDirectMethodWiringApplication {
     System.out.println(johnny);
 
     System.out.println(mittens);
-
-
   }
-
 }
