@@ -1,4 +1,4 @@
-package com.leonelfonseca.java.di.wired.directmethodwiring.model;
+package com.leonelfonseca.java.di.wired.beanmultiplechoice.model;
 
 import lombok.Data;
 
