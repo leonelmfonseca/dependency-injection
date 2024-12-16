@@ -1,7 +1,7 @@
-package com.leonelfonseca.java.di.wired.beanmultiplechoice.config;
+package com.leonelfonseca.java.di.wired.beanmultiplechoice.parameterinj.config;
 
-import com.leonelfonseca.java.di.wired.beanmultiplechoice.model.Cat;
-import com.leonelfonseca.java.di.wired.beanmultiplechoice.model.Person;
+import com.leonelfonseca.java.di.wired.beanmultiplechoice.qualifier.model.Cat;
+import com.leonelfonseca.java.di.wired.beanmultiplechoice.qualifier.model.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

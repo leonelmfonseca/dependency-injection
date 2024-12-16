@@ -1,4 +1,4 @@
-package com.leonelfonseca.java.di.wired.beanmultiplechoice.model;
+package com.leonelfonseca.java.di.wired.beanmultiplechoice.qualifier.model;
 
 import lombok.Data;
 
