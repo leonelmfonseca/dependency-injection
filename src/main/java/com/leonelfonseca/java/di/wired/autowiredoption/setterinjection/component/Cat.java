@@ -13,14 +13,14 @@ import org.springframework.stereotype.Component;
  * into these components using annotations like @Autowired.
  */
 @Component
-public class SetterInjectionCat {
+public class Cat {
   private String name = "Mittens";
   private String breed = "Siamese";
   private int age = 5; // in years
   private double weight = 3.4; // in kilograms
   private String color = "black";
 
-  public SetterInjectionCat() {
+  public Cat() {
     /**
      * Having a default constructor in SetterInjectionCat ensures that Spring can instantiate the bean
      * correctly

@@ -7,18 +7,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Data
-public class CircularDependenciesPerson {
+public class Person {
 
   private String name = "Mary";
   private int age = 43;
 
-  private CircularDependenciesCat mittens;
+  private Cat mittens;
 
   /**
    * Person requests a dependency to Bean Cat, so, to create Bean Person, Spring needs first to have Bean Cat.
    */
   @Autowired
-  public CircularDependenciesPerson(CircularDependenciesCat mittens) {
+  public Person(Cat mittens) {
     this.mittens = mittens;
   }
 

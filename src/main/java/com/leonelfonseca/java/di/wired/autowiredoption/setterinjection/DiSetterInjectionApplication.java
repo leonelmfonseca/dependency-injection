@@ -1,6 +1,6 @@
 package com.leonelfonseca.java.di.wired.autowiredoption.setterinjection;
 
-import com.leonelfonseca.java.di.wired.autowiredoption.setterinjection.component.SetterInjectionPerson;
+import com.leonelfonseca.java.di.wired.autowiredoption.setterinjection.component.Person;
 import com.leonelfonseca.java.di.wired.autowiredoption.setterinjection.config.SetterInjectionConfig;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -21,7 +21,7 @@ public class DiSetterInjectionApplication {
     var context = new AnnotationConfigApplicationContext(SetterInjectionConfig.class);
 
     /** Bean are available to be used */
-    SetterInjectionPerson johnny = context.getBean(SetterInjectionPerson.class);
+    Person johnny = context.getBean(Person.class);
 
     System.out.println(johnny);
   }

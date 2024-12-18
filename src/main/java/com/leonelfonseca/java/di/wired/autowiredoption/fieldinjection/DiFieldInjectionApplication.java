@@ -1,6 +1,6 @@
 package com.leonelfonseca.java.di.wired.autowiredoption.fieldinjection;
 
-import com.leonelfonseca.java.di.wired.autowiredoption.fieldinjection.component.FieldInjectionPerson;
+import com.leonelfonseca.java.di.wired.autowiredoption.fieldinjection.component.Person;
 import com.leonelfonseca.java.di.wired.autowiredoption.fieldinjection.config.FieldInjectionConfig;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -21,7 +21,7 @@ public class DiFieldInjectionApplication {
     var context = new AnnotationConfigApplicationContext(FieldInjectionConfig.class);
 
     /** Bean are available to be used */
-    FieldInjectionPerson johnny = context.getBean(FieldInjectionPerson.class);
+    Person johnny = context.getBean(Person.class);
 
     System.out.println(johnny);
   }

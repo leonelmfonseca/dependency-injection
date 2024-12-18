@@ -1,4 +1,4 @@
-package com.leonelfonseca.java.di.wired.autowiredoption.fieldinjection.component;
+package com.leonelfonseca.java.di.wired.autowiredoption.ctorinjection.component;
 
 import lombok.Data;
 import org.springframework.stereotype.Component;
@@ -13,16 +13,20 @@ import org.springframework.stereotype.Component;
  * into these components using annotations like @Autowired.
  */
 @Component
-public class FieldInjectionCat {
+public class Cat {
   private String name = "Mittens";
   private String breed = "Siamese";
   private int age = 5; // in years
   private double weight = 3.4; // in kilograms
   private String color = "black";
 
-  public FieldInjectionCat() {
+  /*
+   @Autowired: as this object doesn't have any dependencies, annotating it with @Autowired(DI),
+   without ctor params(dependencies) will return: "Autowired constructor without parameters"
+   */
+  public Cat() {
     /**
-     * Having a default constructor in FieldInjectionCat ensures that Spring can instantiate the bean
+     * Having a default constructor in CtorInjectionCat ensures that Spring can instantiate the bean
      * correctly
      */
     System.out.println("Miau!");

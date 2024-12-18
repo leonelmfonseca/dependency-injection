@@ -14,15 +14,15 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Data
-public class SetterInjectionPerson {
+public class Person {
 
   private String name = "Mary";
   private int age = 43;
 
-  private SetterInjectionCat mittens;
+  private Cat mittens;
 
   @Autowired
-  public void setMittens(SetterInjectionCat mittens) {
+  public void setMittens(Cat mittens) {
     this.mittens = mittens;
   }
 

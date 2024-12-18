@@ -1,9 +1,9 @@
 package com.leonelfonseca.java.di.wired.autowiredoption.fieldinjection.component;
 
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+@Data
 /**
  * The class is a Spring-managed component, which means Spring will automatically detect it and
  * register it in the application context. and it will handle the lifecycle of the class, including
@@ -13,16 +13,37 @@ import org.springframework.stereotype.Component;
  * into these components using annotations like @Autowired.
  */
 @Component
-@Data
-public class FieldInjectionPerson {
+public class Cat {
+  private String name = "Mittens";
+  private String breed = "Siamese";
+  private int age = 5; // in years
+  private double weight = 3.4; // in kilograms
+  private String color = "black";
 
-  private String name = "Mary";
-  private int age = 43;
-
-  @Autowired private FieldInjectionCat mittens;
+  public Cat() {
+    /**
+     * Having a default constructor in FieldInjectionCat ensures that Spring can instantiate the bean
+     * correctly
+     */
+    System.out.println("Miau!");
+  }
 
   @Override
   public String toString() {
-    return "Person{" + "name='" + name + '\'' + ", age=" + age + ", cat=" + mittens + '}';
+    return "Cat{"
+        + "name='"
+        + name
+        + '\''
+        + ", breed='"
+        + breed
+        + '\''
+        + ", age="
+        + age
+        + ", weight="
+        + weight
+        + ", color='"
+        + color
+        + '\''
+        + '}';
   }
 }

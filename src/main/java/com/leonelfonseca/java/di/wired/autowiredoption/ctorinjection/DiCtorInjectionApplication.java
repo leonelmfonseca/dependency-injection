@@ -1,6 +1,6 @@
 package com.leonelfonseca.java.di.wired.autowiredoption.ctorinjection;
 
-import com.leonelfonseca.java.di.wired.autowiredoption.ctorinjection.component.CtorInjectionPerson;
+import com.leonelfonseca.java.di.wired.autowiredoption.ctorinjection.component.Person;
 import com.leonelfonseca.java.di.wired.autowiredoption.ctorinjection.config.CtorInjectionConfig;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -21,7 +21,7 @@ public class DiCtorInjectionApplication {
     var context = new AnnotationConfigApplicationContext(CtorInjectionConfig.class);
 
     /** Bean are available to be used */
-    CtorInjectionPerson johnny = context.getBean(CtorInjectionPerson.class);
+    Person johnny = context.getBean(Person.class);
 
     System.out.println(johnny);
   }
